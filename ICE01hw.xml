@@ -15,6 +15,59 @@
         <next>
           <block type="oled_drawtext" id="5">
             <field name="TEXT">LOGICS JADE 2</field>
+            <next>
+              <block type="robot_delay" id="7" inline="true">
+                <value name="DELAY">
+                  <block type="math_number" id="14">
+                    <field name="NUM">2</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="movement_forward" id="55">
+                    <next>
+                      <block type="movement_setmotors" id="24" inline="true">
+                        <value name="BOTHMOVLEFT">
+                          <block type="math_number" id="31">
+                            <field name="NUM">100</field>
+                          </block>
+                        </value>
+                        <value name="BOTHMOVRIGHT">
+                          <block type="math_number" id="38">
+                            <field name="NUM">100</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="movement_left" id="65">
+                            <next>
+                              <block type="movement_leftmotor" id="75" inline="true">
+                                <value name="MOVLEFT">
+                                  <block type="math_number" id="82">
+                                    <field name="NUM">360</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="movement_right" id="92">
+                                    <next>
+                                      <block type="movement_rightmotor" id="103" inline="true">
+                                        <value name="MOVRIGHT">
+                                          <block type="math_number" id="110">
+                                            <field name="NUM">360</field>
+                                          </block>
+                                        </value>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
           </block>
         </next>
       </block>
