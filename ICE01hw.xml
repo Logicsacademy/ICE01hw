@@ -16,49 +16,49 @@
           <block type="oled_drawtext" id="5">
             <field name="TEXT">Logics Jade 2</field>
             <next>
-              <block type="movement_forward" id="8">
+              <block type="movement_forward" id="6">
                 <next>
-                  <block type="movement_setmotors" id="359" inline="true">
+                  <block type="movement_setmotors" id="7" inline="true">
                     <value name="BOTHMOVLEFT">
-                      <block type="math_number" id="360">
+                      <block type="math_number" id="8">
                         <field name="NUM">360</field>
                       </block>
                     </value>
                     <value name="BOTHMOVRIGHT">
-                      <block type="math_number" id="361">
+                      <block type="math_number" id="9">
                         <field name="NUM">360</field>
                       </block>
                     </value>
                     <next>
-                      <block type="robot_delay" id="6" inline="true">
+                      <block type="robot_delay" id="10" inline="true">
                         <value name="DELAY">
-                          <block type="math_number" id="7">
+                          <block type="math_number" id="11">
                             <field name="NUM">1000</field>
                           </block>
                         </value>
                         <next>
-                          <block type="movement_right" id="15">
+                          <block type="movement_right" id="12">
                             <next>
-                              <block type="movement_setmotors" id="364" inline="true">
+                              <block type="movement_setmotors" id="13" inline="true">
                                 <value name="BOTHMOVLEFT">
-                                  <block type="math_number" id="365">
+                                  <block type="math_number" id="14">
                                     <field name="NUM">0</field>
                                   </block>
                                 </value>
                                 <value name="BOTHMOVRIGHT">
-                                  <block type="math_number" id="366">
+                                  <block type="math_number" id="15">
                                     <field name="NUM">360</field>
                                   </block>
                                 </value>
                                 <next>
-                                  <block type="robot_delay" id="19" inline="true">
+                                  <block type="robot_delay" id="16" inline="true">
                                     <value name="DELAY">
-                                      <block type="math_number" id="28">
+                                      <block type="math_number" id="17">
                                         <field name="NUM">1000</field>
                                       </block>
                                     </value>
                                     <next>
-                                      <block type="movement_stop" id="295"></block>
+                                      <block type="movement_stop" id="18"></block>
                                     </next>
                                   </block>
                                 </next>
