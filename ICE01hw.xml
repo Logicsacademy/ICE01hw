@@ -1,69 +1,64 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="comment_comment" id="363" x="429" y="-47">
-    <field name="TEXT">Move around in a square</field>
+  <block type="oled_cleardisplay" id="1" x="404" y="-7">
     <next>
-      <block type="oled_cleardisplay" id="1">
+      <block type="oled_setcursor" id="2" inline="true">
+        <value name="STARTX">
+          <block type="math_number" id="3">
+            <field name="NUM">10</field>
+          </block>
+        </value>
+        <value name="STARTY">
+          <block type="math_number" id="4">
+            <field name="NUM">10</field>
+          </block>
+        </value>
         <next>
-          <block type="oled_setcursor" id="2" inline="true">
-            <value name="STARTX">
-              <block type="math_number" id="3">
-                <field name="NUM">10</field>
-              </block>
-            </value>
-            <value name="STARTY">
-              <block type="math_number" id="4">
-                <field name="NUM">10</field>
-              </block>
-            </value>
+          <block type="oled_drawtext" id="5">
+            <field name="TEXT">Logics Jade 2</field>
             <next>
-              <block type="oled_drawtext" id="5">
-                <field name="TEXT">Logics Jade 2</field>
+              <block type="movement_forward" id="8">
                 <next>
-                  <block type="movement_forward" id="8">
+                  <block type="movement_setmotors" id="359" inline="true">
+                    <value name="BOTHMOVLEFT">
+                      <block type="math_number" id="360">
+                        <field name="NUM">360</field>
+                      </block>
+                    </value>
+                    <value name="BOTHMOVRIGHT">
+                      <block type="math_number" id="361">
+                        <field name="NUM">360</field>
+                      </block>
+                    </value>
                     <next>
-                      <block type="movement_setmotors" id="359" inline="true">
-                        <value name="BOTHMOVLEFT">
-                          <block type="math_number" id="360">
-                            <field name="NUM">360</field>
-                          </block>
-                        </value>
-                        <value name="BOTHMOVRIGHT">
-                          <block type="math_number" id="361">
-                            <field name="NUM">360</field>
+                      <block type="robot_delay" id="6" inline="true">
+                        <value name="DELAY">
+                          <block type="math_number" id="7">
+                            <field name="NUM">2500</field>
                           </block>
                         </value>
                         <next>
-                          <block type="robot_delay" id="6" inline="true">
-                            <value name="DELAY">
-                              <block type="math_number" id="7">
-                                <field name="NUM">2500</field>
-                              </block>
-                            </value>
+                          <block type="movement_right" id="15">
                             <next>
-                              <block type="movement_right" id="15">
+                              <block type="movement_setmotors" id="364" inline="true">
+                                <value name="BOTHMOVLEFT">
+                                  <block type="math_number" id="365">
+                                    <field name="NUM">0</field>
+                                  </block>
+                                </value>
+                                <value name="BOTHMOVRIGHT">
+                                  <block type="math_number" id="366">
+                                    <field name="NUM">360</field>
+                                  </block>
+                                </value>
                                 <next>
-                                  <block type="movement_setmotors" id="364" inline="true">
-                                    <value name="BOTHMOVLEFT">
-                                      <block type="math_number" id="365">
-                                        <field name="NUM">0</field>
-                                      </block>
-                                    </value>
-                                    <value name="BOTHMOVRIGHT">
-                                      <block type="math_number" id="366">
-                                        <field name="NUM">360</field>
+                                  <block type="robot_delay" id="19" inline="true">
+                                    <value name="DELAY">
+                                      <block type="math_number" id="28">
+                                        <field name="NUM">1300</field>
                                       </block>
                                     </value>
                                     <next>
-                                      <block type="robot_delay" id="19" inline="true">
-                                        <value name="DELAY">
-                                          <block type="math_number" id="28">
-                                            <field name="NUM">1300</field>
-                                          </block>
-                                        </value>
-                                        <next>
-                                          <block type="movement_stop" id="295"></block>
-                                        </next>
-                                      </block>
+                                      <block type="movement_stop" id="295"></block>
                                     </next>
                                   </block>
                                 </next>
