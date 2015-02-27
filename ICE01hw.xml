@@ -14,7 +14,7 @@
         </value>
         <next>
           <block type="oled_drawtext" id="5">
-            <field name="TEXT">I m fooling around</field>
+            <field name="TEXT">Logics Jade 2</field>
             <next>
               <block type="robot_delay" id="6" inline="true">
                 <value name="DELAY">
