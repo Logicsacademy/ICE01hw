@@ -16,44 +16,62 @@
           <block type="oled_drawtext" id="5">
             <field name="TEXT">LOGICS JADE 2</field>
             <next>
-              <block type="robot_delay" id="7" inline="true">
+              <block type="robot_delay" id="6" inline="true">
                 <value name="DELAY">
-                  <block type="math_number" id="14">
+                  <block type="math_number" id="7">
                     <field name="NUM">2</field>
                   </block>
                 </value>
                 <next>
-                  <block type="movement_forward" id="55">
+                  <block type="movement_forward" id="8">
                     <next>
-                      <block type="movement_setmotors" id="24" inline="true">
+                      <block type="movement_setmotors" id="9" inline="true">
                         <value name="BOTHMOVLEFT">
-                          <block type="math_number" id="31">
+                          <block type="math_number" id="10">
                             <field name="NUM">100</field>
                           </block>
                         </value>
                         <value name="BOTHMOVRIGHT">
-                          <block type="math_number" id="38">
+                          <block type="math_number" id="11">
                             <field name="NUM">100</field>
                           </block>
                         </value>
                         <next>
-                          <block type="movement_left" id="65">
+                          <block type="robot_delay" id="19" inline="true">
+                            <value name="DELAY">
+                              <block type="math_number" id="28">
+                                <field name="NUM">2</field>
+                              </block>
+                            </value>
                             <next>
-                              <block type="movement_leftmotor" id="75" inline="true">
-                                <value name="MOVLEFT">
-                                  <block type="math_number" id="82">
-                                    <field name="NUM">360</field>
-                                  </block>
-                                </value>
+                              <block type="movement_left" id="12">
                                 <next>
-                                  <block type="movement_right" id="92">
+                                  <block type="movement_leftmotor" id="13" inline="true">
+                                    <value name="MOVLEFT">
+                                      <block type="math_number" id="14">
+                                        <field name="NUM">360</field>
+                                      </block>
+                                    </value>
                                     <next>
-                                      <block type="movement_rightmotor" id="103" inline="true">
-                                        <value name="MOVRIGHT">
-                                          <block type="math_number" id="110">
-                                            <field name="NUM">360</field>
+                                      <block type="robot_delay" id="21" inline="true">
+                                        <value name="DELAY">
+                                          <block type="math_number" id="35">
+                                            <field name="NUM">2</field>
                                           </block>
                                         </value>
+                                        <next>
+                                          <block type="movement_right" id="15">
+                                            <next>
+                                              <block type="movement_rightmotor" id="16" inline="true">
+                                                <value name="MOVRIGHT">
+                                                  <block type="math_number" id="17">
+                                                    <field name="NUM">360</field>
+                                                  </block>
+                                                </value>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
                                       </block>
                                     </next>
                                   </block>
